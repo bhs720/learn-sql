@@ -1,4 +1,9 @@
 # learn-sql
+
+## Table of Contents
+- [Option 1: Connect to server with PuTTY](#option-1-connect-to-server-with-putty)
+- [Option 2: Connect to server with Windows 10 SSH Client](#option-2-connect-to-server-with-windows-10-ssh-client)
+
 ## Option 1: Connect to server with PuTTY
 Download: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
