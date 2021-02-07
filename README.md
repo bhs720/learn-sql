@@ -2,7 +2,7 @@
 ## Option 1: Connect to server with PuTTY
 Download: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
-Under _Session_, enter the server IP and SSH port number
+Under **Session**, enter the server IP and SSH port number
 
 ![putty config 1](/images/putty_config1.png)
 
@@ -37,3 +37,6 @@ Select your new Saved Session and click **Open**
 Enter your Linux username and Private Key password
 
 ![putty config 1](/images/putty_config9.png)
+
+
+# Option 2: Connect to server with Windows 10 SSH client
