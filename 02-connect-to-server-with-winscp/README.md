@@ -1,4 +1,4 @@
-[** < Go back to main page **](/)
+**[< Go back to main page](../)**
 
 
 # Connect to server with WinSCP
@@ -28,4 +28,4 @@ Click **Login**
 ![putty config 1](images/winscp_config5.png)
 
 
-[** < Go back to main page **](/)
+**[< Go back to main page](../)**
