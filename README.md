@@ -1,8 +1,5 @@
 # learn-sql
 
-## Table of Contents
-- [Option 1: Connect to server with PuTTY](#option-1-connect-to-server-with-putty)
-- [Option 2: Connect to server with Windows 10 SSH Client](#option-2-connect-to-server-with-windows-10-ssh-client)
 
 ## Connect to server with PuTTY
 Download: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
@@ -39,7 +36,7 @@ Select your new Saved Session and click **Open**
 ![putty config 1](/images/putty_config8.png)
 
 
-Enter your Linux username and Private Key password
+Enter your Linux username and press Enter
 
 ![putty config 1](/images/putty_config9.png)
 
