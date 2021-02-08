@@ -1,3 +1,6 @@
+[** < Go back to main page **](/)
+
+
 # Connect to server with WinSCP
 
 WinSCP lets you transfer files between your local PC and the server (like FTP).
@@ -23,3 +26,6 @@ Click **Save**. Give your settings a name and click **OK**
 Click **Login**
 
 ![putty config 1](images/winscp_config5.png)
+
+
+[** < Go back to main page **](/)

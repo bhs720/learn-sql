@@ -1,3 +1,6 @@
+[** < Go back to main page **](/)
+
+
 # Connect to server with PuTTY
 Download: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
@@ -36,3 +39,6 @@ Select your new Saved Session and click **Open**
 Enter your Linux username and press Enter
 
 ![putty config 1](images/putty_config9.png)
+
+
+[** < Go back to main page **](/)
