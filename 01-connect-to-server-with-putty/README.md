@@ -14,7 +14,7 @@ Under **Connection** --> **SSH** --> **Auth**, select the path to your Private K
 ![putty config 1](images/putty_config2.png)
 
 
-PuTTY's default font is hard on the eyes Under **Window** --> **Appearance**, change the font to something that is to your liking.
+PuTTY's default font is hard on the eyes. Under **Window** --> **Appearance**, change the font to something that is to your liking.
 
 ![putty config 1](images/putty_config3.png)
 ![putty config 1](images/putty_config4.png)
