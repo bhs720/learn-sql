@@ -1,7 +1,4 @@
-# learn-sql
-
-
-## Connect to server with PuTTY
+# Connect to server with PuTTY
 Download: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 Under **Session**, enter the server IP and SSH port number
