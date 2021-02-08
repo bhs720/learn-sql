@@ -4,7 +4,7 @@
 - [Option 1: Connect to server with PuTTY](#option-1-connect-to-server-with-putty)
 - [Option 2: Connect to server with Windows 10 SSH Client](#option-2-connect-to-server-with-windows-10-ssh-client)
 
-## Option 1: Connect to server with PuTTY
+## Connect to server with PuTTY
 Download: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 Under **Session**, enter the server IP and SSH port number
@@ -44,4 +44,30 @@ Enter your Linux username and Private Key password
 ![putty config 1](/images/putty_config9.png)
 
 
-# Option 2: Connect to server with Windows 10 SSH client
+# Connect to server with WinSCP
+
+WinSCP lets you transfer files between your local PC and the server (like FTP).
+
+Download: https://winscp.net/eng/download.php
+
+Click on **New Site**, enter **Host name**, **Port number**, and **User name**. Then click **Advanced** --> **Advanced**
+
+![putty config 1](/images/winscp_config1.png)
+
+
+Go to **SSH** --> **Authentication** and select your private key file.
+
+![putty config 1](/images/winscp_config2.png)
+
+
+Click **Save**. Give your settings a name and click **OK**
+
+![putty config 1](/images/winscp_config3.png)
+![putty config 1](/images/winscp_config4.png)
+
+
+Click **Login**
+
+![putty config 1](/images/winscp_config5.png)
+
+
