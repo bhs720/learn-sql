@@ -1,4 +1,4 @@
-**[< Go back to main page](../../)**
+**[< Go back to main page](../../../)**
 
 
 # Connect to server with PuTTY
@@ -41,4 +41,4 @@ Enter your Linux username and press Enter
 ![putty config 1](images/putty_config9.png)
 
 
-**[< Go back to main page](../../)**
+**[< Go back to main page](../../../)**
