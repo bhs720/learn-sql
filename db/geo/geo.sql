@@ -1,3 +1,8 @@
+-- drop active connections to "geo" database"
+SELECT pg_terminate_backend(pid)
+FROM   pg_stat_activity
+WHERE  datname='geo';
+
 DROP DATABASE IF EXISTS "geo";
 
 CREATE DATABASE "geo" WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'en_US.UTF-8' LC_CTYPE = 'en_US.UTF-8';
@@ -27,7 +32,7 @@ CREATE TABLE public.countries (
 );
 
 COPY countries 
-FROM '/home/bs_admin/Downloads/geo/countries.csv'
+FROM '/home/bs_admin/learn-sql/db/geo/countries.csv'
 DELIMITER ','
 CSV HEADER;
 
@@ -44,7 +49,7 @@ CREATE TABLE public.states (
 );
 
 COPY states
-FROM '/home/bs_admin/Downloads/geo/states.csv'
+FROM '/home/bs_admin/learn-sql/db/geo/states.csv'
 DELIMITER ','
 CSV HEADER;
 
@@ -63,7 +68,7 @@ CREATE TABLE public.cities (
 );
 
 COPY cities
-FROM '/home/bs_admin/Downloads/geo/cities.csv'
+FROM '/home/bs_admin/learn-sql/db/geo/cities.csv'
 DELIMITER ','
 CSV HEADER;
 
