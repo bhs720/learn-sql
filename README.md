@@ -2,3 +2,4 @@
 
 - [Connect to server with PuTTY](01-connect-to-server-with-putty/)
 - [Connect to server with WinSCP](02-connect-to-server-with-winscp)
+- [Connect to server with DBeaver](03-connect-to-server-with-dbeaver)
