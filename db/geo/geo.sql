@@ -1,4 +1,4 @@
--- drop active connections to "geo" database"
+-- drop active connections to "geo" database
 SELECT pg_terminate_backend(pid)
 FROM   pg_stat_activity
 WHERE  datname='geo';
@@ -8,7 +8,8 @@ DROP DATABASE IF EXISTS "geo";
 CREATE DATABASE "geo" WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'en_US.UTF-8' LC_CTYPE = 'en_US.UTF-8';
 
 \connect "geo"
-		
+
+-- import table "countries"		
 CREATE TABLE public.countries (
 	id integer NOT NULL,
 	"name" varchar(50) NOT NULL,
@@ -36,6 +37,14 @@ FROM '/home/bs_admin/learn-sql/db/geo/countries.csv'
 DELIMITER ','
 CSV HEADER;
 
+-- "timezones" column from input file is not valid JSON
+-- create a new column, fix the JSON and drop the old column
+ALTER TABLE countries RENAME COLUMN timezones TO timezones_old;
+ALTER TABLE countries ADD timezones json NULL;
+UPDATE countries SET timezones = regexp_replace(regexp_replace(timezones_old, '([{,])([a-zA-Z]+?):', '\1"\2":', 'g'), ':''(.+?)''([,}])', ':"\1"\2', 'g')::json;
+ALTER TABLE countries DROP COLUMN timezones_old;
+
+-- import table "states"
 CREATE TABLE public.states (
 	id integer NOT NULL,
 	"name" varchar(100) NOT NULL,
@@ -53,6 +62,7 @@ FROM '/home/bs_admin/learn-sql/db/geo/states.csv'
 DELIMITER ','
 CSV HEADER;
 
+-- import table "cities"
 CREATE TABLE public.cities (
 	id integer NOT NULL,
 	"name" varchar(100) NOT NULL,
